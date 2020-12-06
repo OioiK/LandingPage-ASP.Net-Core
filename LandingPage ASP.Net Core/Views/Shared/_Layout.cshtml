@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>   
+    @await Html.PartialAsync("MetatagsPartial")
+    @await Html.PartialAsync("CssPartial")
+    <link rel="icon" href="favicon.ico" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">    
+</head>
+<body>
+    <main>
+        @RenderBody()
+        <div id="thethinker_img">
+            <img class="toonkindude" src="images/thinker-test2.gif">
+        </div>
+        @await Html.PartialAsync("TextPartial")
+        <div class="icons-social">
+            @await Html.PartialAsync("LinksPartial")
+        </div>
+    </main>
+</body>
+</html>
